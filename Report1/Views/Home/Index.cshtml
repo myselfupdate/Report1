@@ -1,0 +1,69 @@
+﻿@model Report1.Models.DataTable
+@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+<div class="jumbotron">
+    <h2>BI报表</h2>
+
+</div>
+
+<div style="margin-top:20px">
+    <table border="1" style="width:inherit">
+        <tr>
+            <th>经销商</th>
+            <th>零售金额</th>
+            <th>抹零</th>
+            <th>付款金额</th>
+            <th>未付金额</th>
+            <th>退款金额</th>
+            <th>累计应收金额</th>
+        </tr>
+        <tr style="height:20px">
+            <td>@TempData["testdata"]</td>
+            @*<td>@Model.sales</td>
+                <td>@Model.payment</td>
+                <td>@Model.dislodge</td>
+                <td>@Model.debt</td>
+                <td>@Model.refund</td>
+                <td>@Model.aggregate</td>*@
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+</div>
+
+<div style="margin-top:20px">
+    <table border="1" style="width:inherit">
+        <tr>
+            <th>付款金额合计</th>
+            <th>工行扫码</th>
+            <th>银行卡</th>
+            <th>微信</th>
+            <th>支付宝</th>
+            <th>现金</th>
+        </tr>
+        <tr style="height:20px">
+            <td>@TempData["testdata"]</td>
+            @*<td>@Model.sales</td>
+                <td>@Model.payment</td>
+                <td>@Model.dislodge</td>
+                <td>@Model.debt</td>
+                <td>@Model.refund</td>
+                <td>@Model.aggregate</td>*@
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+    </table>
+</div>
